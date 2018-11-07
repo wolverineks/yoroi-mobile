@@ -1,5 +1,6 @@
 // @flow
 import _ from 'lodash'
+import axios from 'axios'
 
 import {Logger} from '../utils/logging'
 import {CONFIG} from '../config'
@@ -12,44 +13,33 @@ import type {Transaction, RawUtxo} from '../types/HistoryTransaction'
 
 type Addresses = Array<string>
 
-const _checkResponse = (response, requestPayload) => {
-  if (response.status !== 200) {
-    Logger.debug('Bad status code from server', response.status)
-    Logger.debug('Request payload:', requestPayload)
-    throw new ApiError(response)
-  }
-}
-
 const _fetch = (path: string, payload: any) => {
   Logger.info(`API call: ${path}`)
-  return (
-    fetch(`${CONFIG.API.ROOT}/${path}`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json; charset=utf-8',
-      },
-      body: JSON.stringify(payload),
+  return axios(`${CONFIG.API.ROOT}/${path}`, {
+    method: 'POST',
+    data: payload,
+    validateStatus: (status) => status === 200,
+  })
+    .catch((e) => {
+      Logger.info(`API call ${path} failed`, e)
+      // Error-handling logic taken from
+      // https://github.com/axios/axios/issues/383#issuecomment-436506793
+      if (e.response) {
+        // Connected to the server
+        throw new ApiError(e.request)
+      } else if (e.code === 'ECONNABORTED') {
+        // timeout or cancelled request
+        throw new NetworkError()
+      } else {
+        // Connection error
+        throw new NetworkError()
+      }
     })
-      // Fetch throws only for network/dns/related errors, not http statuses
-      .catch((e) => {
-        Logger.info(`API call ${path} failed`, e)
-        /* It really is TypeError according to
-        https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
-        */
-        if (e instanceof TypeError) {
-          throw new NetworkError()
-        }
-        throw e
-      })
-      .then(async (r) => {
-        Logger.info(`API call ${path} finished`)
-
-        _checkResponse(r, payload)
-        const response = await r.json()
-        Logger.debug('Response:', response)
-        return response
-      })
-  )
+    .then((response) => {
+      Logger.info(`API call ${path} finished`)
+      Logger.debug('Response:', response)
+      return response.data
+    })
 }
 
 export const fetchNewTxHistory = async (
