@@ -167,6 +167,16 @@ export const signTransaction = async (
   }
 }
 
+export const signMoveAllFunds = async (
+  wallet: any,
+  inputs: Array<TransactionInput>,
+  output: string,
+) => {
+  const result = await Wallet.move(wallet, inputs, output)
+  console.log(result)
+  return result
+}
+
 export const formatBIP44 = (
   account: number,
   type: AddressType,

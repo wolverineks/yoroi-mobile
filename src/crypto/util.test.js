@@ -11,6 +11,7 @@ import {
   decryptData,
   formatBIP44,
   signTransaction,
+  signMoveAllFunds,
 } from './util'
 
 import {InsufficientFunds} from './errors'
@@ -189,5 +190,19 @@ describe('signTransaction', () => {
     const promise = signTransaction(wallet, inputs, outputs, change)
     // expect(await promise).not.toBeNull()
     await expect(promise).rejects.toBeInstanceOf(InsufficientFunds)
+  })
+})
+
+describe('signMoveFunds', () => {
+  const wallet = require('./__fixtures/fake_wallet.json')
+  const inputs = require('./__fixtures/transaction_inputs.json')
+  const outputAddress =
+    'Ae2tdPwUPEZAghGCdQykbGxc991wdoA8bXmSn7eCGuUKXF4EsRhWj4PJitn'
+
+  it('can move funds', async () => {
+    expect.assertions(1)
+
+    const tx = await signMoveAllFunds(wallet, inputs, outputAddress)
+    expect(tx).not.toBeNull()
   })
 })
