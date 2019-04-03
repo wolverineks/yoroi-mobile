@@ -1,0 +1,8 @@
+#!/bin/bash
+
+function android-setup() {
+
+  set -e
+  sudo ANDROID_HOME=/opt/android-sdk-linux bash android/get_android_ndk.sh
+
+}

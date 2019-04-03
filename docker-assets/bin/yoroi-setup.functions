@@ -1,0 +1,10 @@
+#!/bin/bash
+
+function yoroi-setup() {
+
+  set -e
+  sudo chown -R $(id -u):$(id -g) /src
+  yarn install
+  yarn setup_configs
+
+}

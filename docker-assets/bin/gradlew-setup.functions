@@ -1,0 +1,36 @@
+#!/bin/bash
+
+function gradlew-setup() {
+
+  echo "sdk.dir=$ANDROID_HOME" >> android/local.properties
+  cat >> android/gradle.properties.local <<EOF
+MYAPP_RELEASE_STORE_PASSWORD=lalala
+MYAPP_RELEASE_KEY_PASSWORD=lalala
+EOF
+  yes | ${ANDROID_HOME}/tools/bin/sdkmanager --licenses
+
+  sudo chown -R $(id -u):$(id -g) /src
+  rm package-lock.json
+  yarn add metro-core
+  # all depends should be there from previous steps, but "react-native bundle" 
+  # is failing... so we just "yarn install" again to ensure everything is okay
+  yarn install
+  yarn android-bundle
+  yarn run react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+
+            rm -rf node_modules/react-native-cardano/rust/target
+            curl -O https://s3.amazonaws.com/yoroi-backups/target.zip
+            unzip -a target.zip -d node_modules/react-native-cardano/rust/
+            if [ ! -d "node_modules/react-native/third-party" ]
+            then
+              cd node_modules/react-native 
+              ./scripts/ios-install-third-party.sh
+              cd $OLDPWD
+              cd node_modules/react-native/third-party/glog-0.3.5/
+              make distclean
+              ./configure
+              cd $OLDPWD
+            fi
+  ./android/gradlew
+
+}
