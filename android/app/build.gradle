@@ -92,12 +92,12 @@ apply from: "../../node_modules/react-native-sentry/sentry.gradle"
  * Upload all the APKs to the Play Store and people will download
  * the correct one based on the CPU architecture of their device.
  */
-def enableSeparateBuildPerCPUArchitecture = false
+def enableSeparateBuildPerCPUArchitecture = true
 
 /**
  * Run Proguard to shrink the Java bytecode in release builds.
  */
-def enableProguardInReleaseBuilds = true
+def enableProguardInReleaseBuilds = false
 
 def Properties properties = new Properties()
 properties.load(project.rootProject.file("gradle.properties.local").newDataInputStream())
@@ -117,7 +117,7 @@ android {
         versionCode 10
         versionName "1.2"
         ndk {
-            abiFilters "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
+            //abiFilters "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
         }
     }
     signingConfigs {
