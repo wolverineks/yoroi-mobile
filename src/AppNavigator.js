@@ -169,20 +169,26 @@ const NavigatorSwitch = compose(
     }
     // note: it makes much more sense to only change the initialRouteName in the
     // following two cases, but that didn't work (probably bug in react-navigation)
-    if (!hasAnyWallet) {
-      return (
-        <Stack.Navigator
-          initialRouteName={ROOT_ROUTES.NEW_WALLET}
-          screenOptions={{headerShown: false}}
-        >
-          <Stack.Screen
-            name={ROOT_ROUTES.NEW_WALLET}
-            component={WalletInitNavigator}
-          />
-          <Stack.Screen name={ROOT_ROUTES.WALLET} component={WalletNavigator} />
-        </Stack.Navigator>
-      )
-    }
+
+    /**
+     * DO NOT navigate to new wallet, navigate to list by default
+     * keeping below code in case we revert back
+     * */
+
+    // if (!hasAnyWallet) {
+    //   return (
+    //     <Stack.Navigator
+    //       initialRouteName={ROOT_ROUTES.NEW_WALLET}
+    //       screenOptions={{headerShown: false}}
+    //     >
+    //       <Stack.Screen
+    //         name={ROOT_ROUTES.NEW_WALLET}
+    //         component={WalletInitNavigator}
+    //       />
+    //       <Stack.Screen name={ROOT_ROUTES.WALLET} component={WalletNavigator} />
+    //     </Stack.Navigator>
+    //   )
+    // }
     return (
       <Stack.Navigator
         initialRouteName={ROOT_ROUTES.WALLET}

@@ -127,6 +127,8 @@ const WalletListScreen = ({wallets, navigateInitWallet, openWallet, intl}) => (
 )
 
 const walletsListSelector = (state) => Object.values(state.wallets)
+const hasAnyWalletSelector = (state: State): boolean =>
+  !_.isEmpty(state.wallets)
 
 export default injectIntl(
   (compose(
@@ -134,6 +136,7 @@ export default injectIntl(
       (state: State) => ({
         wallets: walletsListSelector(state),
         currentVersion: currentVersionSelector(state),
+        hasAnyWallet: hasAnyWalletSelector(state),
       }),
       {
         updateVersion,
@@ -179,9 +182,14 @@ export default injectIntl(
         }
       },
     }),
-    onDidMount(async ({updateVersion}) => {
+    onDidMount(async ({updateVersion, hasAnyWallet, navigation}) => {
       // if needed, one can add logic here for, e.g., notifying the user about
       // new features after an update
+      if (!hasAnyWallet) {
+        // below log is printed but does not navigate
+        console.log('navigating to new wallet')
+        navigation.navigate(ROOT_ROUTES.NEW_WALLET)
+      }
 
       await updateVersion()
     }),
