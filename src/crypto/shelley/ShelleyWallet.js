@@ -725,7 +725,7 @@ export default class ShelleyWallet extends Wallet implements WalletInterface {
     const absSlotNumber = new BigNumber(timeToSlotFn({time: new Date()}).slot)
     const changeAddr = await this._getAddressedChangeAddress()
     const addressedUtxos = this.asAddressedUtxo(utxos)
-    const stakingKey = await this.getStakingKey()
+    // const stakingKey = await this.getStakingKey()
 
     try {
       const config = CONFIG.NETWORKS.HASKELL_SHELLEY
