@@ -706,6 +706,21 @@ class WalletManager {
     )
   }
 
+  async createVotingRegTx(
+    utxos: Array<RawUtxo>,
+    catalystPrivateKey: string,
+    decryptedKey: string,
+  ) {
+    if (!this._wallet) throw new WalletClosed()
+    return await this.abortWhenWalletCloses(
+      this._wallet.createVotingRegTx<mixed>(
+        utxos,
+        catalystPrivateKey,
+        decryptedKey,
+      ),
+    )
+  }
+
   async createWithdrawalTx(utxos: Array<RawUtxo>, shouldDeregister: boolean) {
     if (!this._wallet) throw new WalletClosed()
     return await this.abortWhenWalletCloses(

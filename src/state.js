@@ -84,6 +84,11 @@ export type State = {
   // actions that may override this property (otherwise more refactoring is needed)
   isFlawedWallet: boolean,
   isMaintenance: boolean,
+  voting: {
+    pin: Array<number>,
+    encryptedKey: ?string,
+    catalystPrivateKey: ?string,
+  },
 }
 
 export const getInitialState = (): State => ({
@@ -147,6 +152,12 @@ export const getInitialState = (): State => ({
   },
   isFlawedWallet: false,
   isMaintenance: false,
+  voting: {
+    pin: [],
+    encryptedKey: null,
+    catalystPrivateKey: undefined,
+    unSignedTx: null,
+  },
 })
 
 export const mockState = (): State => {

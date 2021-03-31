@@ -176,6 +176,12 @@ export interface WalletInterface {
     totalAmountToDelegate: MultiToken,
   }>;
 
+  createVotingRegTx<T>(
+    utxos: Array<RawUtxo>,
+    catalystPrivateKey: string,
+    decryptedKey: string,
+  ): Promise<ISignRequest<T>>;
+
   createWithdrawalTx<T>(
     utxos: Array<RawUtxo>,
     shouldDeregister: boolean,
