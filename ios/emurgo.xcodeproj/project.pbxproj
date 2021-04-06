@@ -10,7 +10,6 @@
 		00E356F31AD99517003FC87E /* emurgoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* emurgoTests.m */; };
 		087D95DB98A155D2B096DE3C /* libPods-emurgo-emurgo-nightly.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAF71CA34AD7B12440AFCE21 /* libPods-emurgo-emurgo-nightly.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
-		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		237BDF69DA4AC362D0191EEE /* libPods-emurgo-emurgoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D1D2320FE78AA7F5D9691D /* libPods-emurgo-emurgoTests.a */; };
@@ -18,19 +17,20 @@
 		2E3E7CD92298ACEA00D5C487 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2E3E7CF72298ACEA00D5C487 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2E3E7CF82298ACEA00D5C487 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2FC0BFA21C7F02200DA195B /* InfoPlist.strings */; };
-		2E3E7CF92298ACEA00D5C487 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		2EBA2AD022EA877F00BF8A5B /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2971642150620600B7C4FE /* JavaScriptCore.framework */; };
 		4F6EF78F0F96BF89BCE30BF4 /* libPods-emurgo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ACE00EEA1CFF0F233A7856D /* libPods-emurgo.a */; };
 		B3F0A669C9435000F769DE49 /* libPods-emurgo-emurgo-staging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 326E332CB478B869587486FE /* libPods-emurgo-emurgo-staging.a */; };
 		BA3D0647FB29475CA53128CF /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BAD3D7933540D184340C1B /* libresolv.tbd */; };
 		E2FC0BF821C7F02200DA195B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2FC0BFA21C7F02200DA195B /* InfoPlist.strings */; };
+		E9204856261D020F00AF9D45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9204855261D020F00AF9D45 /* LaunchScreen.storyboard */; };
+		E9204857261D020F00AF9D45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9204855261D020F00AF9D45 /* LaunchScreen.storyboard */; };
+		E9204858261D020F00AF9D45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9204855261D020F00AF9D45 /* LaunchScreen.storyboard */; };
 		E9A1C7DC24185CCA00151CFA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		E9A1C7DD24185CCA00151CFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		E9A1C7E124185CCA00151CFA /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2971642150620600B7C4FE /* JavaScriptCore.framework */; };
 		E9A1C7FC24185CCA00151CFA /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BAD3D7933540D184340C1B /* libresolv.tbd */; };
 		E9A1C80024185CCA00151CFA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		E9A1C80124185CCA00151CFA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2FC0BFA21C7F02200DA195B /* InfoPlist.strings */; };
-		E9A1C80224185CCA00151CFA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		E9EACF88245B42C40062ED1D /* dummy_ble.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EACF87245B42C40062ED1D /* dummy_ble.swift */; };
 		E9EACF89245B42C40062ED1D /* dummy_ble.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EACF87245B42C40062ED1D /* dummy_ble.swift */; };
 		E9EACF8A245B42C40062ED1D /* dummy_ble.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EACF87245B42C40062ED1D /* dummy_ble.swift */; };
@@ -59,7 +59,6 @@
 		13B07F961A680F5B00A75B9A /* emurgo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = emurgo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = emurgo/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = emurgo/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = emurgo/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = emurgo/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = emurgo/main.m; sourceTree = "<group>"; };
@@ -106,9 +105,8 @@
 		E2FC0C3C21C7F32300DA195B /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		E532A9572A34655080361779 /* Pods-emurgo-emurgo-staging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emurgo-emurgo-staging.release.xcconfig"; path = "Target Support Files/Pods-emurgo-emurgo-staging/Pods-emurgo-emurgo-staging.release.xcconfig"; sourceTree = "<group>"; };
 		E5D1D2320FE78AA7F5D9691D /* libPods-emurgo-emurgoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-emurgo-emurgoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9A1C61824183FB700151CFA /* emurgo copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "emurgo copy2-Info.plist"; path = "/Users/vicente/dev/emurgo/yoroi-mobile/ios/emurgo copy2-Info.plist"; sourceTree = "<absolute>"; };
+		E9204855261D020F00AF9D45 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = emurgo/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9A1C80A24185CCA00151CFA /* Yoroi Nightly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yoroi Nightly.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9A1C80B24185CCA00151CFA /* emurgo copy3-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "emurgo copy3-Info.plist"; path = "/Users/vicente/dev/emurgo/yoroi-mobile/ios/emurgo copy3-Info.plist"; sourceTree = "<absolute>"; };
 		E9EACF84245B42C40062ED1D /* emurgo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "emurgo-Bridging-Header.h"; sourceTree = "<group>"; };
 		E9EACF85245B42C40062ED1D /* emurgo-staging-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "emurgo-staging-Bridging-Header.h"; sourceTree = "<group>"; };
 		E9EACF86245B42C40062ED1D /* emurgo-nightly-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "emurgo-nightly-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -179,13 +177,13 @@
 		13B07FAE1A68108700A75B9A /* emurgo */ = {
 			isa = PBXGroup;
 			children = (
+				E9204855261D020F00AF9D45 /* LaunchScreen.storyboard */,
 				2E5B414122A8B26500BE1FC1 /* Staging-Info.plist */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
-				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				E2FC0BFA21C7F02200DA195B /* InfoPlist.strings */,
 			);
@@ -227,8 +225,6 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				F7FBD967219C5A6D003FE9E2 /* Recovered References */,
-				E9A1C61824183FB700151CFA /* emurgo copy2-Info.plist */,
-				E9A1C80B24185CCA00151CFA /* emurgo copy3-Info.plist */,
 				E9EACF84245B42C40062ED1D /* emurgo-Bridging-Header.h */,
 				E9EACF85245B42C40062ED1D /* emurgo-staging-Bridging-Header.h */,
 				E9EACF86245B42C40062ED1D /* emurgo-nightly-Bridging-Header.h */,
@@ -451,9 +447,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9204856261D020F00AF9D45 /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				E2FC0BF821C7F02200DA195B /* InfoPlist.strings in Resources */,
-				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,9 +457,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9204857261D020F00AF9D45 /* LaunchScreen.storyboard in Resources */,
 				2E3E7CF72298ACEA00D5C487 /* Images.xcassets in Resources */,
 				2E3E7CF82298ACEA00D5C487 /* InfoPlist.strings in Resources */,
-				2E3E7CF92298ACEA00D5C487 /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,9 +467,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9204858261D020F00AF9D45 /* LaunchScreen.storyboard in Resources */,
 				E9A1C80024185CCA00151CFA /* Images.xcassets in Resources */,
 				E9A1C80124185CCA00151CFA /* InfoPlist.strings in Resources */,
-				E9A1C80224185CCA00151CFA /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -784,15 +780,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		13B07FB11A68108700A75B9A /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				13B07FB21A68108700A75B9A /* Base */,
-			);
-			name = LaunchScreen.xib;
-			path = emurgo;
-			sourceTree = "<group>";
-		};
 		E2FC0BFA21C7F02200DA195B /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
