@@ -1,9 +1,11 @@
 // @flow
 /* eslint-disable-next-line */ // $FlowFixMe
-import {KeyStoreBridge} from 'NativeModules'
-import {Platform} from 'react-native'
+import {Platform, NativeModules} from 'react-native'
 import * as Keychain from 'react-native-keychain'
 import KeyStore from '../crypto/KeyStore'
+
+
+const {KeyStoreBridge} = NativeModules
 
 export const isBiometricEncryptionHardwareSupported = async () => {
   if (Platform.OS === 'android') {
