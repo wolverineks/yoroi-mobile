@@ -77,7 +77,6 @@ sketchy-null-mixed=warn
 sketchy-number=warn
 nonstrict-import=warn
 deprecated-type=warn
-inexact-spread=warn
 unnecessary-invariant=warn
 signature-verification-failure=warn
 deprecated-utility=error
