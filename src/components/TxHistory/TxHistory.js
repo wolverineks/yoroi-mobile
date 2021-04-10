@@ -10,6 +10,7 @@ import _ from 'lodash'
 import {BigNumber} from 'bignumber.js'
 import {injectIntl, defineMessages} from 'react-intl'
 import {fetchUTXOs} from '../../actions/utxo'
+import VotingBanner from '../Catalyst/VotingBanner'
 
 import {Text, Banner, OfflineBanner, StatusBar, WarningBanner} from '../UiKit'
 import infoIcon from '../../assets/img/icon/info-light-green.png'
@@ -33,7 +34,7 @@ import {
   withNavigationTitle,
 } from '../../utils/renderUtils'
 import FlawedWalletModal from './FlawedWalletModal'
-import {WALLET_ROOT_ROUTES} from '../../RoutesList'
+import {WALLET_ROOT_ROUTES, CATALYST_ROUTES} from '../../RoutesList'
 import {isByron} from '../../config/config'
 
 import {formatTokenWithText} from '../../utils/format'
@@ -121,6 +122,7 @@ const TxHistory = ({
   <SafeAreaView style={styles.scrollView}>
     <StatusBar type="dark" />
     <View style={styles.container}>
+      <VotingBanner onPress={() => navigation.navigate(CATALYST_ROUTES.ROOT)} />
       {isFlawedWallet === true && (
         <FlawedWalletModal
           visible={isFlawedWallet === true}
