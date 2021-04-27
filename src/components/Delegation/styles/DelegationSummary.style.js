@@ -11,6 +11,9 @@ export default StyleSheet.create({
     flexDirection: 'column',
     flex: 1,
   },
+  activityIndicator: {
+    padding: 24,
+  },
   empty: {
     justifyContent: 'center',
     alignItems: 'center',

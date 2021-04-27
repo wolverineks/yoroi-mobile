@@ -4,7 +4,13 @@ import React from 'react'
 import type {ComponentType} from 'react'
 import {connect} from 'react-redux'
 import {compose} from 'redux'
-import {View, ScrollView, RefreshControl, Platform} from 'react-native'
+import {
+  ActivityIndicator,
+  View,
+  ScrollView,
+  RefreshControl,
+  Platform,
+} from 'react-native'
 import SafeAreaView from 'react-native-safe-area-view'
 import {BigNumber} from 'bignumber.js'
 import {injectIntl} from 'react-intl'
@@ -609,11 +615,7 @@ class StakingDashboard extends React.Component<Props, State> {
                   fetchUTXOs()
                   fetchAccountState()
                 }}
-                refreshing={
-                  isFetchingAccountState ||
-                  isFetchingUtxos ||
-                  isFetchingPoolInfo
-                }
+                refreshing={false}
               />
             }
           >
@@ -641,16 +643,20 @@ class StakingDashboard extends React.Component<Props, State> {
               onWithdraw={this.openWithdrawalDialog}
               disableWithdraw={this.props.isReadOnly}
             />
+
             {/* eslint-disable indent */
-            poolInfo != null &&
-              !!poolOperator && (
-                <DelegatedStakepoolInfo
-                  poolTicker={poolInfo.info?.ticker}
-                  poolName={poolInfo.info?.name}
-                  poolHash={poolOperator != null ? poolOperator : ''}
-                  poolURL={poolInfo.info?.homepage}
-                />
-              )
+            poolInfo != null && !!poolOperator ? (
+              <DelegatedStakepoolInfo
+                poolTicker={poolInfo.info?.ticker}
+                poolName={poolInfo.info?.name}
+                poolHash={poolOperator != null ? poolOperator : ''}
+                poolURL={poolInfo.info?.homepage}
+              />
+            ) : (
+              <View style={styles.activityIndicator}>
+                <ActivityIndicator size={'large'} color={'black'} />
+              </View>
+            )
             /* eslint-enable indent */
             }
           </ScrollView>
