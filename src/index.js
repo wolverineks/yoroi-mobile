@@ -16,6 +16,8 @@ import {CONFIG} from './config/config'
 import translations from './i18n/translations'
 import bluebird from 'bluebird'
 
+import './i18n/polyfills'
+
 setLogLevel(CONFIG.LOG_LEVEL)
 
 bluebird.config({
