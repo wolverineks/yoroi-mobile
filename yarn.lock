@@ -2234,10 +2234,10 @@
     buffer-crc32 "0.2.13"
     fnv-plus "1.3.1"
 
-"@emurgo/react-native-haskell-shelley@1.1.4":
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/@emurgo/react-native-haskell-shelley/-/react-native-haskell-shelley-1.1.4.tgz#90a1d71893a6d0cc59a553dfe3573696027e305f"
-  integrity sha512-mVw/PGJvmxEchVX4y6DUehncow8sMgpEkHhawGuTkBsNORLsEXcPoRgYtLcQXNQnCcvN2yDqfR1Ac5PdZgCS7Q==
+"@emurgo/react-native-haskell-shelley@1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@emurgo/react-native-haskell-shelley/-/react-native-haskell-shelley-1.1.3.tgz#6fe117df1c79498b714fa0bc9b6a106b3e544deb"
+  integrity sha512-jY9qHcf6EJl3OJg7703V1yUKG8CZC8RWCwkYMWdFzeJM5WGAmqmV7HKA8vziY6+giA6dSyYLGtGvWLpuDxP8Cw==
   dependencies:
     base-64 "0.1.0"
 
@@ -13581,10 +13581,10 @@ react-native-tab-view@2.15.2:
   resolved "https://registry.yarnpkg.com/react-native-tab-view/-/react-native-tab-view-2.15.2.tgz#4bc7832d33a119306614efee667509672a7ee64e"
   integrity sha512-2hxLkBnZtEKFDyfvNO5EUywhy3f/EiLOBO8SWqKj4BMBTO0QwnybaPE5MVF00Fhz+VA4+h/iI40Dkrrtq70dGg==
 
-react-native-webview@11.0.2:
-  version "11.0.2"
-  resolved "https://registry.yarnpkg.com/react-native-webview/-/react-native-webview-11.0.2.tgz#c88e84fa470f04ff070ff8a2c7f4d7295d46bb06"
-  integrity sha512-GDyIBRbCZ2wbMUGCxA7LufSEbSoWKOzkFB8YljmAffA15tzN6ccvGEquB/hkk5KhvoYy300kwJyEmyBeG6d/AA==
+react-native-webview@11.6.2:
+  version "11.6.2"
+  resolved "https://registry.yarnpkg.com/react-native-webview/-/react-native-webview-11.6.2.tgz#e19b3325d6777caee29d04eb2edf9b70f0b29915"
+  integrity sha512-7e5ltLBgqt1mX0gdTTS2nFPIjfS6y300wqJ4rLWqU71lDO+8ZeayfsF5qo83qxo2Go74CtLnSeWae4pdGwUqYw==
   dependencies:
     escape-string-regexp "2.0.0"
     invariant "2.2.4"
