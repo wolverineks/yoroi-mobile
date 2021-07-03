@@ -1,6 +1,10 @@
 module.exports = {
-  extends: ['vacuumlabs', 'plugin:react-hooks/recommended'],
-  plugins: ['react-native', 'flowtype'],
+  extends: [
+    'vacuumlabs',
+    'plugin:react-hooks/recommended',
+    'plugin:react/recommended',
+  ],
+  plugins: ['react-native', 'react', 'flowtype'],
   env: {
     'react-native/react-native': true,
   },
