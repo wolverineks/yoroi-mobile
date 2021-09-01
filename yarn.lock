@@ -7851,10 +7851,10 @@ escodegen@^1.11.1:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-vacuumlabs@1.9.0:
-  version "1.9.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-vacuumlabs/-/eslint-config-vacuumlabs-1.9.0.tgz#0303648eabfa407f8198ec697d2fbf89907c6687"
-  integrity sha512-wnTqoQPAsBjErJZVgYuBAP3KYrtAau31nVq7F93S+S/hjMddAvVPnxyzCKVsxVdX4S/R5l9Gjzt0+Zo90HYmDQ==
+eslint-config-vacuumlabs@2.0.14:
+  version "2.0.14"
+  resolved "https://registry.yarnpkg.com/eslint-config-vacuumlabs/-/eslint-config-vacuumlabs-2.0.14.tgz#bee6e6e90aeb84b4885a1a23125eeb61a65e4c9c"
+  integrity sha512-AX7MK2PPQDRLVC5rZmbFmfFMcztfHI/p8pQoXw63Rifx/Ecehd/h3E2cNN7O2aNsMWfhFxgxzl7YfS1fs/E14Q==
 
 eslint-formatter-pretty@^1.3.0:
   version "1.3.0"
