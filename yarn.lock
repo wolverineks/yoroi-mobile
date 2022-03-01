@@ -14160,10 +14160,10 @@ react-native-crypto@2.2.0:
     public-encrypt "^4.0.0"
     randomfill "^1.0.3"
 
-react-native-device-info@6.0.1:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/react-native-device-info/-/react-native-device-info-6.0.1.tgz#4aae636cd826e9ab53c0db68bb3baec86f81890f"
-  integrity sha512-cE3TbTcJ6jrKHD+IHsdKGJISz4UpBo6xwwDWYr+EqvlZ+OMCIcPjjDzApuFCiHhNDvbxJgcElG3eAq8tl6ojKw==
+react-native-device-info@8.4.9:
+  version "8.4.9"
+  resolved "https://registry.yarnpkg.com/react-native-device-info/-/react-native-device-info-8.4.9.tgz#3089ea0bf9c9a28327d3ba683469a32b093172dd"
+  integrity sha512-EEdeoaBhaLTOZmCy5xtfepVAfvodteiDHoIxBPUgnNe5p0JLv90BLKtVytbJhlllWScUO48+2u9S7M6WNYsXDQ==
 
 react-native-easy-markdown@1.4.1:
   version "1.4.1"
