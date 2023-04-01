@@ -64,7 +64,7 @@
     "lodash": "^4.17.20",
     "moment": "2.29.1",
     "net": "^1.0.2",
-    "node-fetch": "^2.6.1",
+    "node-fetch": "^3.3.1",
     "p-limit": "3.1.0",
     "react": "16.13.1",
     "react-intl": "^2.8.0",
